@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h> // For exit() function
+#include <stdlib.h>
 int main() {
-    #define CHUNK 1024 /* read 1024 bytes at a time */
+    #define CHUNK 1024
     char buf[CHUNK];
     FILE *file;
     size_t nread;
