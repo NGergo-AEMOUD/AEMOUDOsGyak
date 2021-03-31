@@ -14,7 +14,7 @@ int main ()
 
 	signal(SIGINT, do_int);
 
-for (i=1;i<8;i++) {
+for (i=1;i<100;i++) {
 	alarm(sec);
 	signal(SIGALRM, do_nothing);
 	printf("  %d Varakozas...\n",i);
