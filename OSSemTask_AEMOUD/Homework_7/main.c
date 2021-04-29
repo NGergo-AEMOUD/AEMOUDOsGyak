@@ -17,11 +17,11 @@ void* thread(void* arg)
     fp = fopen ("AEMOUD.txt", "w+");
     fputs("AEMOUD\n", fp);
     fclose(fp);
-    printf("File Ìr·sa megtˆrtÈnt!");
+    printf("File √≠r√°sa megt√∂rt√©nt!");
     sleep(3);
 
     //signal
-    printf("\nSzemafor lez·r·sa...\n");
+    printf("\nSzemafor lez√°r√°sa...\n");
     sem_post(&mutex);
 }
 
@@ -30,7 +30,7 @@ int main()
 {
 
     sem_init(&mutex, 0, 1);
-    pthread_t t1,t2;
+    pthread_t t1;
     pthread_create(&t1,NULL,thread,NULL);
     pthread_join(t1,NULL);
     sem_destroy(&mutex);
