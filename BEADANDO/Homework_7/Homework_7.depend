@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1619686786 source:c:\users\nagyg\desktop\progi\homework_7\main.c
-	<stdio.h>
-	<stdlib.h>
-	<pthread.h>
-	<semaphore.h>
-	<unistd.h>
-
