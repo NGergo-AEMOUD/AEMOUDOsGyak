@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1619686792 source:c:\users\nagyg\desktop\progi\homework_fileread\main.c
+	<stdio.h>
+	<stdlib.h>
+
