@@ -8,11 +8,11 @@ sem_t mutex;
 
 void* thread(void* arg)
 {
-    //wait
+
     sem_wait(&mutex);
     printf("\nSzemafor megnyitva!\n");
 
-    //critical section
+
     FILE *fp;
     fp = fopen ("AEMOUD.txt", "w+");
     fputs("AEMOUD\n", fp);
@@ -20,7 +20,7 @@ void* thread(void* arg)
     printf("File írása megtörtént!");
     sleep(3);
 
-    //signal
+
     printf("\nSzemafor lezárása...\n");
     sem_post(&mutex);
 }
