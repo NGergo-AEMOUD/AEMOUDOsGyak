@@ -3,12 +3,22 @@
 
 int main()
 {
-    FILE *fp;
-    char buff[255];
+    
+  FILE * fptr;
+  int i,n;
+  char str[100];
+  char fname[20]="AEMOUD.txt";
+  char str1;
 
-    fp = fopen("C:\\Users\\nagyg\\Desktop\\Progi\\Homework_7\\AEMOUD.txt", "r");
-    fscanf(fp, "%s", buff);
-    printf("\nA file tartalma : %s\n", buff );
-
-    fclose(fp);
+	fptr = fopen (fname, "r");  
+	printf("A fájl tartalma:\n");
+	str1 = fgetc(fptr);
+	while (str1 != EOF)
+		{
+			printf ("%c", str1);
+			str1 = fgetc(fptr);
+		}
+    printf("\n\n");
+    fclose (fptr);
+    return 0;
 }
